@@ -20,7 +20,7 @@ namespace _4RTools.Forms
             this.subject.Attach(this);
 
             InitializeComponent();
-            this.Text = ConfigurationManager.AppSettings["Name"] + " - " + ConfigurationManager.AppSettings["Version"]; // Window title
+            this.Text = Resources._4RTools.Variables.Name + " - " + Resources._4RTools.Variables.Version; // Window title
 
             //Container Configuration
             this.IsMdiContainer = true;
@@ -243,17 +243,17 @@ namespace _4RTools.Forms
 
         private void lblLinkGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(ConfigurationManager.AppSettings["GithubLink"]);
+            Process.Start(Resources._4RTools.Variables.GithubLink);
         }
 
         private void lblLinkDiscord_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(ConfigurationManager.AppSettings["DiscordLink"]);
+            Process.Start(Resources._4RTools.Variables.DiscordLink);
         }
 
         private void websiteLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(ConfigurationManager.AppSettings["4RToolsWebsite"]);
+            Process.Start(Resources._4RTools.Variables._4RToolsWebsite);
         }
 
         private void profileCB_SelectedIndexChanged(object sender, EventArgs e)

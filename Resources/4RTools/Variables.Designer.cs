@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _4RTools.Properties {
+namespace _4RTools.Resources._4RTools {
     using System;
     
     
@@ -22,24 +22,24 @@ namespace _4RTools.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Resources {
+    internal class Variables {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Variables() {
         }
         
         /// <summary>
         ///   Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_4RTools.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_4RTools.Resources._4RTools.Variables", typeof(Variables).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace _4RTools.Properties {
         ///   pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace _4RTools.Properties {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a https://api.github.com/repos/4RTools/4RTools/releases/latest.
         /// </summary>
-        public static string _4RLatestVersionURL {
+        internal static string _4RLatestVersionURL {
             get {
                 return ResourceManager.GetString("4RLatestVersionURL", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace _4RTools.Properties {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a https://www.4rtools.com.br.
         /// </summary>
-        public static string _4RToolsWebsite {
+        internal static string _4RToolsWebsite {
             get {
                 return ResourceManager.GetString("4RToolsWebsite", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace _4RTools.Properties {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a https://discord.gg/AtZ2fJVtBz.
         /// </summary>
-        public static string DiscordLink {
+        internal static string DiscordLink {
             get {
                 return ResourceManager.GetString("DiscordLink", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace _4RTools.Properties {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a https://github.com/4RTools/4Rtools.
         /// </summary>
-        public static string GithubLink {
+        internal static string GithubLink {
             get {
                 return ResourceManager.GetString("GithubLink", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace _4RTools.Properties {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a 4RTools.
         /// </summary>
-        public static string Name {
+        internal static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace _4RTools.Properties {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Profile\\.
         /// </summary>
-        public static string ProfileFolder {
+        internal static string ProfileFolder {
             get {
                 return ResourceManager.GetString("ProfileFolder", resourceCulture);
             }
@@ -117,16 +117,16 @@ namespace _4RTools.Properties {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a https://raw.githubusercontent.com/4RTools/4RTools/main/supported_servers.json.
         /// </summary>
-        public static string SupportedServersURL {
+        internal static string SupportedServersURL {
             get {
                 return ResourceManager.GetString("SupportedServersURL", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a 2.1.7.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 2.1.8.
         /// </summary>
-        public static string Version {
+        internal static string Version {
             get {
                 return ResourceManager.GetString("Version", resourceCulture);
             }

@@ -141,7 +141,7 @@
     <value>https://raw.githubusercontent.com/4RTools/4RTools/main/supported_servers.json</value>
   </data>
   <data name="Version" xml:space="preserve">
-    <value>2.1.7</value>
+    <value>2.1.8</value>
     <comment>Current Project Version</comment>
   </data>
 </root>

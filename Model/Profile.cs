@@ -11,7 +11,7 @@ namespace _4RTools.Model
     public class ProfileSingleton
     {
         public static Profile profile = new Profile("Default");
-        private static string profileFolder = ConfigurationManager.AppSettings["ProfileFolder"];
+        private static string profileFolder = Resources._4RTools.Variables.ProfileFolder;
 
         public static void Load(string profileName)
         {
@@ -128,9 +128,10 @@ namespace _4RTools.Model
     public static List<string> ListAll()
         {
             List<string> profiles = new List<string>();
+            string profileFolder = Resources._4RTools.Variables.ProfileFolder;
             try
             {
-                string[] files =  Directory.GetFiles(ConfigurationManager.AppSettings["ProfileFolder"]);
+                string[] files =  Directory.GetFiles(profileFolder);
                 
                 foreach(string fileName in files)
                 {

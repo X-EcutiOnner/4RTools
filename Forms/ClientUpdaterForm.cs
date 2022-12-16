@@ -50,7 +50,7 @@ namespace _4RTools.Forms
                 
                 //If fetch successfully update and load local file.
                 client.Timeout = TimeSpan.FromSeconds(5);
-                string remoteServersRaw = await client.GetStringAsync(ConfigurationManager.AppSettings["SupportedServersURL"]);
+                string remoteServersRaw = await client.GetStringAsync(Resources._4RTools.Variables.SupportedServersURL);
                 clients.AddRange(JsonConvert.DeserializeObject<List<ClientDTO>>(remoteServersRaw));
 
             }

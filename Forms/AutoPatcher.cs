@@ -41,18 +41,21 @@ namespace _4RTools.Forms
             //List[1] = Url
             try
             {
-                String oldFileName = $"{ConfigurationManager.AppSettings["Name"]}_old.exe";
-                String sourceFileName = $"{ConfigurationManager.AppSettings["Name"]}.exe";
+                string execName = Resources._4RTools.Variables.Name;
+                string oldFileName = $"{execName}_old.exe";
+                string sourceFileName = $"{execName}.exe";
+
+
                 File.Delete(oldFileName); //Delete old 4RTools
                 //Fetch Github latest Tag
                 client.Timeout = TimeSpan.FromSeconds(5);
                 client.DefaultRequestHeaders.Add("User-Agent", "request");
-                string latestVersion = await client.GetStringAsync(ConfigurationManager.AppSettings["4RLatestVersionURL"]);
+                string latestVersion = await client.GetStringAsync(Resources._4RTools.Variables._4RLatestVersionURL);
                 JObject obj = JsonConvert.DeserializeObject<JObject>(latestVersion);
 
                 string tag = obj["name"].ToString(); //Tag Name
 
-                if (tag != ConfigurationManager.AppSettings["Version"])
+                if (tag != Resources._4RTools.Variables.Version)
                 {
                     string downloadUrl = obj["assets"][0]["browser_download_url"].ToString(); //Latest download url
                     string fileName = obj["assets"][0]["name"].ToString(); //Latest file name
