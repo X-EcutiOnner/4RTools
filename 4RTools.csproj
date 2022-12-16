@@ -331,7 +331,6 @@
       <DependentUpon>Icons.resx</DependentUpon>
     </Compile>
     <Compile Include="Utils\EffectStatusIDs.cs" />
-    <Compile Include="Utils\AppConfig.cs" />
     <Compile Include="Utils\Constants.cs" />
     <Compile Include="Utils\FormUtils.cs" />
     <Compile Include="Utils\Interop.cs" />
@@ -555,6 +554,8 @@
     <None Include="assets\images\gentle_touch_revitalize.png" />
     <None Include="assets\images\gentle_touch_convert.png" />
     <None Include="assets\images\cart_boost.png" />
+    <None Include="assets\images\weapon_blocking.png" />
+    <None Include="assets\images\friggs_song.png" />
     <Content Include="logo-4rtools.ico" />
   </ItemGroup>
   <ItemGroup />
