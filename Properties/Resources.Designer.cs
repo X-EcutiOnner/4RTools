@@ -124,7 +124,7 @@ namespace _4RTools.Properties {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a 2.1.7.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 2.1.8.
         /// </summary>
         public static string Version {
             get {
